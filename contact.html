@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Solgryn</title>
+        <link rel="stylesheet" href="index_styles.css" />
+        <script defer src="JS/formValidator.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="name_h1">Solgryn Games</h1>
+            <img src="Images/solgryn_logo.png" alt="logo" id="logo_img" />
+        </header>
+        <hr id="hr1" />
+        <div class="navbar">
+            <nav id="nav_top">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="games.html">GAMES BY SOLGRYN</a></li>
+                    <li><a href="contact.html">CONTACT SOLGRYN</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr />
+
+        <section>
+            <h1>Contact Solgryn</h1>
+            <form id="contactForm" action="index.html" method="post" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <span class="error" id="nameError"
+                    >Please enter your name.</span
+                >
+
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="1234567890"
+                    required
+                />
+                <span class="error" id="phoneError"
+                    >Enter a valid 10-digit phone number.</span
+                >
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <span class="error" id="emailError"
+                    >Enter a valid email address.</span
+                >
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+        <hr />
+        <footer>
+            <nav id="footer_nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="games.html">GAMES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <p id="copyright">© 2025 Solgryn Games All rights reserved.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,237 @@
+body {
+    padding: 0;
+    padding-bottom: 30px;
+    margin: 0;
+    background: #111;
+    color: #ccc;
+    font-size: 13pt;
+    font-family: "Dosis", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-image: url("../Images/background.png");
+    background-repeat: repeat;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#name_h1 {
+    text-align: center;
+    font-size: 250%;
+}
+
+#logo_img {
+    height: 6em;
+    width: auto;
+}
+
+hr {
+    height: 1px;
+    background-color: #585757;
+    border: none;
+    margin: 20px auto;
+}
+
+#hr1 {
+    margin-top: 0px;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+a:focus {
+    color: #8a8a8a;
+}
+
+a:hover {
+    color: #8a8a8a;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+}
+
+nav ul {
+    padding-left: 0;
+    margin: 0 auto;
+    list-style: none;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    text-wrap: nowrap;
+}
+
+#nav_top {
+    width: 82%;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+#about_solgryn {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+#about_solgryn p {
+    margin: 0;
+}
+
+#about_logo p {
+    margin: 0;
+}
+
+#boshy_img {
+    float: left;
+    height: 13em;
+    width: auto;
+    margin-top: 5px;
+}
+
+#solgryn_img {
+    float: right;
+    height: 13em;
+    width: auto;
+    margin-top: 5px;
+}
+
+#about_logo {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    font-size: smaller;
+    text-wrap: nowrap;
+}
+
+#footer_nav {
+    width: 30%;
+}
+
+#footer_nav ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.game_container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid grey;
+}
+
+.game_img {
+    height: 90px;
+    width: auto;
+    margin: auto;
+    border: 1px solid grey;
+}
+
+.game_container h3 {
+    margin: 0;
+    font-size: medium;
+}
+.game_container hr {
+    margin: 0;
+}
+.game_container p {
+    margin: 0;
+    margin-top: 5px;
+    font-size: small;
+    font-weight: normal;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #000;
+    color: #0f0;
+    outline: none;
+    border-color: #0f0;
+}
+
+.error {
+    display: none;
+    color: #f66;
+    font-size: 0.9em;
+}
+
+.form-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+#copyright {
+    color: #666;
+}
+
+@media screen and (max-width: 720px) {
+    #nav_top ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        width: 80%;
+    }
+
+    #about_solgryn p {
+        font-size: smaller;
+    }
+}
